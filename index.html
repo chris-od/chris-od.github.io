@@ -37,7 +37,7 @@
       id="mainNav"
     >
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"
+        <a class="navbar-brand js-scroll-trigger" href="/index#page-top"
           >Mile One Ventures</a
         >
         <button
@@ -306,8 +306,26 @@
         <h2
           class="page-section-heading text-center text-uppercase text-secondary mb-0"
         >
-          Contact Me
+          Blog
         </h2>
+        <!--Medium posts-->
+        <div class="container">
+          <div id="medium-widget"></div>
+          <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+          <script>
+            MediumWidget.Init({
+              renderTo: "#medium-widget",
+              params: {
+                resource: "https://medium.com/@pm_chris",
+                postsPerLine: 3,
+                limit: 6,
+                picture: "small",
+                fields: ["description", "author"],
+                ratio: "original",
+              },
+            });
+          </script>
+        </div>
         <!-- Icon Divider-->
         <div class="divider-custom">
           <div class="divider-custom-line"></div>
